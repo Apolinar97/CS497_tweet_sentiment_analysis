@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CS497 Twitter Sentiment Analysis</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+
 <body>
+  <h1>Twitter Sentiment Analysis for CS497</h1>
 
-<h2>Class labels Positioning</h2>
 
-<table style="width:0%">
-  <tr>
-    <th>Negative</th>
-    <th>Positive</th> 
-    <th>Neutral</th>
-  </tr>
-  
-    <td>0</td>
-    <td>1</td>
-    <td>2</td>
-  </tr>
-</table>
+  <h2>How to make a prediction</h2>
+
+  <ul>
+    <li> Simply add the following to the url: "/predict/sample_text" for GET method</li>
+    <dd>Handles raw text and processes it for prediction</dd>
+  </ul>
+
+  <hr>
+
+  <h2>Interpreting the results</h2>
+
+  <table style="width: fit-content;">
+    <tr>
+      <th>Negative</th>
+      <th>Postive</th>
+      <th>Neutral</th>
+    </tr>
+    <tr>
+      <td>Probility of sentiment</td>
+      <td>Probility of sentiment</td>
+      <td>Probility of sentiment</td>
+    </tr>
+
+  </table>
+
+  <b>Each probability is representative of each character in the string</b>
+
 
 </body>
+
 </html>
